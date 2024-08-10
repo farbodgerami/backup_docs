@@ -1,0 +1,24 @@
+# Use postgres/example user/password credentials
+version: '3.8'
+services:
+ 
+
+  apppostgresql:
+    image: postgres:14 
+    container_name: apppostgresql
+    volumes:
+      - apppostgres:/var/lib/postgresql/data
+    restart: always
+    env_file: .env
+    ports:
+      - "5434:5432"
+    networks:
+      - postgresnetwork
+
+volumes:
+  apppostgres:
+    external: true
+networks:
+  postgresnetwork:
+    external: true
+
