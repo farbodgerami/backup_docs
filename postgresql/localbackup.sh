@@ -11,8 +11,8 @@ docker exec apppostgresql pg_restore -FC  -U postgres -h 127.0.0.1 -p 5432 -d my
 
  
 ### Restore
-# docker exec -i apppostgresql pg_restore -U postgres -h 127.0.0.1 -p 5432 -d mydb < /backups/my_data.dump
+docker exec -i apppostgresql pg_restore -U postgres -h 127.0.0.1 -p 5432 -d mydb < /backups/my_data.dump
 
-# docker exec -i apppostgresql pg_restore -U postgres -v -d mydb < /backups/my_data.dump
+docker exec -i apppostgresql pg_restore -U postgres -v -d mydb < /backups/my_data.dump
 
 docker exec -i apppostgresql pg_restore --verbose --clean --no-acl --no-owner -U postgres -d mydb < ./my_data.dump
