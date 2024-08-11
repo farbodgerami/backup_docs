@@ -1,5 +1,4 @@
-# “At 04:05.”
-# next at 2024-08-12 04:05:00
-
+# “At 04:05.”next at 2024-08-12 04:05:00
 5 4 * * * ~/getbackup.sh && curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/7cae215d-86b0-4741-9034-4a90fc07b410 
-5 4 * * * ~/rclonebackup.sh && curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/7cae215d-86b0-4741-9034-4a90fc07b410 
+# “At 06:05.”next at 2024-08-12 06:05:00
+5 6 * * * ~/rclonebackup.sh && curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/7cae215d-86b0-4741-9034-4a90fc07b410 
