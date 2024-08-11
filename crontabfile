@@ -1,0 +1,2 @@
+ 0 5 * * 1 ~/getbackup.sh && curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/7cae215d-86b0-4741-9034-4a90fc07b410 
+ 0 5 * * 1 ~/rclonebackup.sh && curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/7cae215d-86b0-4741-9034-4a90fc07b410 
