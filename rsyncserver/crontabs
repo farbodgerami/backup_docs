@@ -1,0 +1,7 @@
+*/33 * * * * rsync -r --ignore-existing --exclude=*.dump production:/root/backups/data/project-mysql/ ~/backup/project-mysql  && curl -fsS --retry 3 https://hc-ping.com/
+#Technopay-Mysql-remove-project-Rsync-Production
+0 10 * * * bash /root/backups/rsync/remove_old_project_mariadb.sh  && curl -fsS --retry 3 https://hc-ping.com/ 
+#Technopay-mongodb-project-Rsync-Production
+*/36 * * * * rsync -r --ignore-existing --exclude=*.dump production:/root/backups/data/project-mongodb/ ~/backup/project-mongodb && curl -fsS --retry 3 https://hc-ping.com/ 
+#Technopay-mongodb-remove-Rsync-Production
+0 10 * * * bash /root/backups/rsync/remove_old_project_mongo.sh && curl -fsS --retry 3  https://hc-ping.com/ 

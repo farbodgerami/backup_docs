@@ -1,0 +1,10 @@
+MONGO_USER='mongouser'
+MONGO_PASSWORD='mongopassword'
+dbName='project'
+CONTAINER_NAME=containername
+getCurrentDate=$(date +"%Y-%m-%d")
+getCurrentTime=$(date +"%H-%M-%S")
+storeDumpPath=~/backups/data/project-mongodb/"${getCurrentDate}"/
+logFilePath=~/backups/logs/"${getCurrentDate}"/
+logFileName="${getCurrentTime}.log"
+storeDumpName="project-${getCurrentDate}-${getCurrentTime}.dump"

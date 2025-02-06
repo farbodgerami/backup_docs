@@ -1,0 +1,6 @@
+data/*
+data
+logs
+logs/*
+/transfer/logs
+/transfer/logs/*
